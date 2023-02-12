@@ -7,14 +7,33 @@ export const FooterWrap= styled.div`
     padding-left: 5%;
     padding-right: 5%;
     align-items: center;
+    @media screen and (max-width: 750px){
+        display: none;
+    }
+
 `;
 
-export const LogoSection = styled.div``;
+export const LogoSection = styled.div`
+    img{
+        width: 200px;
+    }
+    @media screen and (max-width: 750px){
+        img{
+        width: 150px;
+    }
+    }
+
+`;
 
 export const LinkSection = styled.div`
     display: flex;
     flex-direction: column;
     line-height: 150%;
+
+    @media screen and (max-width: 750px){
+       align-items: center;
+    }
+
 `;
 
 export const PagewLink =styled(Link)`
@@ -36,7 +55,7 @@ export const SocialIcon = styled.div`
 `;
 
 export const ContactCard = styled.div`
-    width: 430px;
+    max-width: 430px;
     background: #000;
     color: #fff;
     padding: 10px;
@@ -44,4 +63,19 @@ export const ContactCard = styled.div`
     background: #202020;
     border-radius: 5px;
     font-size: 14px;
+    @media screen and (max-width: 750px){
+        background: #F6F6F6;
+        color: #000;
+        margin-top: 30px;
+    }
+
+`;
+export const MobileView = styled.div`
+    display: none;
+
+    @media screen and (max-width: 750px){
+       display: flex;
+       flex-direction: column;
+    }
+
 `;

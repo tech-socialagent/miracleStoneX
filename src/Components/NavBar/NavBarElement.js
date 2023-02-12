@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import {Link} from 'react-router-dom'
+import { Link } from 'react-router-dom'
 import { HashLink } from "react-router-hash-link";
 
 
@@ -18,6 +18,11 @@ export const NavWrap = styled.div`
     z-index: 999;
     width: 100%;
     transition: 2s;
+
+    @media screen and (max-width: 750px){
+        display: none;
+    }
+
 `;
 export const NavList = styled.div`
     display: flex;
@@ -28,12 +33,12 @@ export const NavList = styled.div`
 
 export const ItemHome = styled(Link)`
     margin: 0px 2%;
-    color: ${({pathname}) => (pathname == '/' ? 'var(--secondary-color)' :'var(--primary-color)')} ;
+    color: ${({ pathname }) => (pathname == '/' ? 'var(--secondary-color)' : 'var(--primary-color)')} ;
     text-decoration:  none;    
 `;
 export const ItemAbout = styled(Link)`
     margin: 0px 2%;
-    color: ${({pathname}) => (pathname == '/aboutUs' ? 'var(--secondary-color)' :'var(--primary-color)')} ;
+    color: ${({ pathname }) => (pathname == '/aboutUs' ? 'var(--secondary-color)' : 'var(--primary-color)')} ;
     text-decoration:  none;    
 `;
 
@@ -63,4 +68,37 @@ export const Btn = styled.button`
     border-color: var(--primary-color);
     border: 1px;
     border-style: solid;
+`;
+
+export const MobileView = styled.div`
+    display: none;
+    padding: 20px;
+    font-size: 30px;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    background:#FFFFFF;
+    height: 30px;
+    align-items: center;
+
+    @media screen and (max-width: 750px){
+        display: flex;
+    }
+
+`;
+export const LogoWrapMobile = styled.div`
+    padding: 0px 6%;
+    width: 70%;
+`;
+
+export const LogoMobile = styled.img`
+    height: 60px;
+`;
+
+export const Hamburger = styled.div`
+    width: 30%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
 `;

@@ -6,6 +6,11 @@ export const OurProductWrap = styled.div`
     padding-top: 5%;
     padding-bottom: 5%;
     border-bottom: solid 1px;
+
+    @media screen and (max-width: 650px){
+        padding-top: 10%;
+        padding: 5%;
+    }
 `;
 export const Product = styled.div`
     display: flex;
@@ -44,6 +49,10 @@ export const Product = styled.div`
     button:hover{
         background: #FBAE17;
     }
+    @media screen and (max-width: 750px){
+       flex-direction: column;
+    }
+
 `;
 
 export const Granite = styled.div`
@@ -65,6 +74,10 @@ export const Granite = styled.div`
         opacity: 0;
        }
     }
+    @media screen and (max-width: 750px){
+        width: 100%;
+    }
+
 `;
 
 export const Marble = styled.div`
@@ -96,6 +109,10 @@ export const Marble = styled.div`
        h1{
         opacity: 0;
        }
+    }
+    @media screen and (max-width: 750px){
+        width: 100%;
+        margin-top: 20px;
     }
 `;
 

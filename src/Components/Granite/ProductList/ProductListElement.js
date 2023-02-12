@@ -4,6 +4,10 @@ export const SectionWrap = styled.div`
     padding: 5%;
     padding-top: 0;
     display: flex;
+    @media screen and (max-width: 750px){
+       flex-direction: column;
+       padding: 0;
+    }
 `;
 
 export const Filter = styled.div`
@@ -15,16 +19,41 @@ export const Filter = styled.div`
     top: 30%;
     height: max-content;
 
-    h2{
-        font-style: italic;
-        font-weight: 500;
-        font-size: 24px;
-        line-height: 32px;
-        text-decoration-line: underline;
+    @media screen and (max-width: 750px){
+       border: none;
+       position: relative;
+    }
+`;
+export const FilterMobile = styled.div`
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: none;
+    font-style: italic;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 32px;
+    text-decoration-line: none;
+    @media screen and (max-width: 750px){
+       display: block;
+    }
+`;
+
+export const FilterDesktop = styled.div`
+margin-top: 10px;
+    margin-bottom: 10px;
+    display: block;
+    font-style: italic;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 32px;
+    text-decoration-line: underline;
+    @media screen and (max-width: 750px){
+       display: none;
     }
 `;
 
 export const Color = styled.div`
+    display: block;
     h2{
         padding-left: 15px;
         font-weight: 600;
@@ -45,6 +74,9 @@ export const Color = styled.div`
         cursor: pointer;
         color: var(--secondary-color);
     }
+    @media screen and (max-width: 750px){
+        display: ${({filterActive})=> (filterActive ? 'block' : 'none')};
+    }
 `;
 
 export const ProductWrap = styled.div`
@@ -52,5 +84,10 @@ export const ProductWrap = styled.div`
     padding: 3%;
     display: flex;
     flex-wrap: wrap;
+    @media screen and (max-width: 750px){
+       width: 100%;
+       padding: 0;
+       justify-content: center;
+    }
 `;
 

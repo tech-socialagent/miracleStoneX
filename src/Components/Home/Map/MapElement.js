@@ -21,16 +21,20 @@ export const Desc = styled.div`
     font-size: 18px;
     font-style: normal;
     width: 65%;
+    @media screen and (max-width: 750px){
+       width: 100%;
+    }
+
 `;
 
 export const IndiaMap = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 800px;
+    height: max-content;
     margin-top: 5%;
     img {
-        /* width: 80%; */
-        height: 100%;
+        width: 80%;
+        /* height: 100%; */
     }
 `;

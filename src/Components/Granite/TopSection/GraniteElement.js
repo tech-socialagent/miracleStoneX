@@ -8,6 +8,9 @@ export const SectionWrap = styled.div`
 `;
 export const Left = styled.div`
     width: 70%;
+    @media screen and (max-width: 750px){
+       width: 100%;
+    }
 `;
 
 export const Title = styled.div`
@@ -34,5 +37,8 @@ export const Right = styled.div`
 
     img{
         height: 100%;
+    }
+    @media screen and (max-width: 750px){
+       display: none;
     }
 `;

@@ -26,6 +26,10 @@ export const Content = styled.div`
     font-weight: 400;
     font-size: 18px;
     line-height: 24px;
+    @media screen and (max-width: 750px){
+        padding-left: 0;
+        padding-right: 0;
+    }
 `;
 
 export const Year1 = styled.button`

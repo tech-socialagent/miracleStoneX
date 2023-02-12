@@ -9,6 +9,7 @@ import Testimonials from '../Components/Home/Testimonials/Testimonials'
 import NavBar from '../Components/NavBar/NavBar'
 import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
+import SlideBar from '../Components/SlideBar/SlideBar'
 
 const Home = () => {
   const { pathname } = useLocation();

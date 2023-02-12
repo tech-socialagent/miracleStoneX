@@ -59,9 +59,6 @@ const OurClients = () => {
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                     </Desc>
                 </LeftSection>
-                <RightSection>
-                    <LogoElement src={logoIcon} alt="logoIcon" />
-                </RightSection>
 
             </TopSection>
             <ClientsList>

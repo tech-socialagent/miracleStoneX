@@ -9,10 +9,22 @@ export const SectionWrap = styled.div`
     padding-bottom: 5%;
     border-bottom: solid 1px;
 
+    @media screen and (max-width: 750px){
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 5%;
+    }
+
 `;
  
 export const Left = styled.div`
     width: 60%;
+
+    @media screen and (max-width: 750px){
+       width: 100%;
+    }
+
 `;
  
 export const Title = styled.div`
@@ -32,6 +44,11 @@ export const Desc = styled.div`
  
 export const Righ = styled.div`
      width: 40%;
+
+     @media screen and (max-width: 750px){
+       width: 100%;
+    }
+
 `;
  
 export const Element = styled.div`

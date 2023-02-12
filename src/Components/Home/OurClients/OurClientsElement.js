@@ -9,6 +9,7 @@ export const OurClientWrap = styled.div`
 `;
 export const TopSection = styled.div`
     display: flex;
+
 `;
 export const LeftSection = styled.div``;
 export const RightSection = styled.div`

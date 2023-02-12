@@ -10,6 +10,13 @@ export const CardWrap = styled.div`
     border: 1px #000 solid;
     max-width: 300px;
     min-width: 200px;
+    @media screen and (max-width: 750px){
+        min-width: 35%;
+        max-width: 42%;
+        flex: 1 1 10rem;
+        margin: 5px;
+    }
+        
 `;
 
 export const Image = styled.img`
@@ -22,15 +29,23 @@ export const Title = styled.div`
     font-size: 32px;
     color: var(--secondary-color);
     text-align: center;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @media screen and (max-width: 750px){
+        font-size: 20px;
+    }
 
 `;
 
 export const Desc = styled.div`
     font-weight: 400;
     font-size: 14px;
-    line-height: 19px;
+    @media screen and (max-width: 750px){
+        font-size: 12px;
+    }
 `;
 
 export const Btn = styled.div`
@@ -44,6 +59,16 @@ export const Btn = styled.div`
         background: var(--secondary-color);
         border: none;
         border-radius: 15px;
+    }
+    @media screen and (max-width: 750px){
+        margin-top: 3px;
+        button{
+        width: 80%;
+        height: 35px;
+        background: var(--secondary-color);
+        border: none;
+        border-radius: 15px;
+    }
     }
 `;
 
