@@ -1,0 +1,48 @@
+import React, { useContext } from 'react'
+import { SectionWrap, Filter, ProductWrap, Color } from './ProductListElement'
+import ProductCard from '../../ProductCard/ProductCard'
+import { graniteData } from '../GraniteData'
+import { marbleData } from '../MarbleData'
+import { BsFillDiamondFill } from 'react-icons/bs'
+import { ColorContext } from '../../../Context'
+
+const ProductList = ({page}) => {
+  const { color, setColor } = useContext(ColorContext)
+  let data = [];
+  if(page == 'Granite'){
+    data = graniteData
+  }
+  else{
+    data = marbleData
+  }
+
+  return (
+    <SectionWrap>
+      <Filter>
+        <h2>Filter</h2>
+        <Color>
+          <h2>Color</h2>
+          <h3 style={color == 0 ? { color: 'var(--secondary-color)' } : {}} onClick={() => setColor(0)} ><BsFillDiamondFill style={{ marginRight: '10px' }} /> All</h3>
+          <h3 style={color == 1 ? { color: 'var(--secondary-color)' } : {}} onClick={() => setColor(1)} ><BsFillDiamondFill style={{ marginRight: '10px' }} /> 1White</h3>
+          <h3 style={color == 2 ? { color: 'var(--secondary-color)' } : {}} onClick={() => setColor(2)} ><BsFillDiamondFill style={{ marginRight: '10px' }} /> 2White</h3>
+          <h3 style={color == 3 ? { color: 'var(--secondary-color)' } : {}} onClick={() => setColor(3)} ><BsFillDiamondFill style={{ marginRight: '10px' }} /> 3White</h3>
+          <h3 style={color == 4 ? { color: 'var(--secondary-color)' } : {}} onClick={() => setColor(4)} ><BsFillDiamondFill style={{ marginRight: '10px' }} /> 4White</h3>
+          <h3 style={color == 5 ? { color: 'var(--secondary-color)' } : {}} onClick={() => setColor(5)} ><BsFillDiamondFill style={{ marginRight: '10px' }} /> 5White</h3>
+        </Color>
+      </Filter>
+      <ProductWrap>
+        {
+          graniteData.map((item, key) => {
+            if (color == 0)
+              return <ProductCard key={key} name={item.Name} desc={item.desc} image={item.image} />
+            if (color == item.color)
+              return <ProductCard key={key} name={item.Name} desc={item.desc} image={item.image} />
+          })
+        }
+
+      </ProductWrap>
+    </SectionWrap>
+  )
+}
+
+export default ProductList
