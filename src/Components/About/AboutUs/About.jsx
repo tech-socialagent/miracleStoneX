@@ -1,5 +1,9 @@
 import React, { useContext } from 'react'
 import { Wrap, TopSection, Left, Right, Title, Desc, SecondSection, Card, CardTitle, CardDesc } from './AboutUsElement'
+import Carousel from 'react-bootstrap/Carousel';
+import img01 from '../../../assets/graniteImages/AlaskaGold.jpg'
+import img02 from '../../../assets/graniteImages/BlackForest.jpg'
+import img03 from '../../../assets/graniteImages/GoldenDream.jpg'
 
 const AboutCom = () => {
 
@@ -10,7 +14,7 @@ const AboutCom = () => {
     },
     {
       title: "Customisation Options",
-      desc: "ICustom sizes, shapes, and edge treatments can make their products more attractive to customers who want unique and personalised solutions."
+      desc: "Custom sizes, shapes, and edge treatments can make their products more attractive to customers who want unique and personalised solutions."
     },
     {
       title: "Competitive Pricing",
@@ -30,12 +34,43 @@ const AboutCom = () => {
           </Desc>
         </Left>
         <Right>
-          <img src="" alt="img" />
+          {/* Carousel */}
+
+
+
+          <Carousel>
+            <Carousel.Item interval={1000}>
+              <img
+                className="d-block w-100"
+                src={img01}
+                alt="First slide"
+              />
+            </Carousel.Item>
+            <Carousel.Item interval={500}>
+              <img
+                className="d-block w-100"
+                src={img02}
+                alt="Second slide"
+              />
+            </Carousel.Item>
+            <Carousel.Item>
+              <img
+                className="d-block w-100"
+                src={img03}
+                alt="Third slide"
+              />
+            </Carousel.Item>
+          </Carousel>
+
+
+
+
+
         </Right>
       </TopSection>
       <SecondSection>
         {data.map((item, key) => (
-          <Card  key={key}>
+          <Card key={key}>
             <CardTitle>{item.title} </CardTitle>
             <CardDesc>{item.desc} </CardDesc>
           </Card>

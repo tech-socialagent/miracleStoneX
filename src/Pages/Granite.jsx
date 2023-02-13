@@ -16,7 +16,7 @@ const Granite = () => {
     <>
     <NavBar />
     <TopSection />
-    <ProductList />
+    <ProductList page={'granite'} />
     </>
   )
 }

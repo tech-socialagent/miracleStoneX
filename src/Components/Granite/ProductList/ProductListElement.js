@@ -16,7 +16,7 @@ export const Filter = styled.div`
     padding-right: 3%;
     position: sticky;
     position: -webkit-sticky;
-    top: 30%;
+    top: 15%;
     height: max-content;
 
     @media screen and (max-width: 750px){
@@ -27,14 +27,17 @@ export const Filter = styled.div`
 export const FilterMobile = styled.div`
     margin-top: 10px;
     margin-bottom: 10px;
+    margin-left: 10px;
     display: none;
     font-style: italic;
     font-weight: 500;
     font-size: 24px;
     line-height: 32px;
     text-decoration-line: none;
+    color: ${({ filterActive }) => (filterActive ? 'red' : '#000')};
     @media screen and (max-width: 750px){
-       display: block;
+       display: flex;
+       align-items: center;
     }
 `;
 
@@ -65,7 +68,7 @@ export const Color = styled.div`
     }
     h3{
         font-weight: 500;
-        font-size: 20px;
+        font-size: 18px;
         padding-left: 25px;
         display: flex;
         align-items: center;
@@ -75,7 +78,10 @@ export const Color = styled.div`
         color: var(--secondary-color);
     }
     @media screen and (max-width: 750px){
-        display: ${({filterActive})=> (filterActive ? 'block' : 'none')};
+        display: ${({ filterActive }) => (filterActive ? 'flex' : 'none')};
+        flex-direction: column;
+        flex-wrap: wrap;
+        height: 300px;
     }
 `;
 

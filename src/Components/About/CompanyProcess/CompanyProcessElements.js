@@ -27,7 +27,22 @@ export const Desc = styled.div`
 
 export const Process = styled.div``;
 
-export const ProcessLine = styled.div``;
+export const ProcessLine = styled.div`
+    display: flex;
+    padding-top: 2%;
+`;
+
+export const Line = styled.hr`
+    flex-grow: 1;
+    border: none;
+    background: #6A6A6A;
+`;
+
+export const List = styled.div`
+
+`;
+
+
 
 export const ProcessContent = styled.div`
     display: flex;

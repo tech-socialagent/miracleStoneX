@@ -61,7 +61,7 @@ export const Logo = styled.img`
 export const Btn = styled.button`
     margin: 0px 2%;
     background: transparent;
-    width: 112px;
+    width: max-content;
     height: 30px;
     padding-top: 2px;
     color: var(--primary-color);

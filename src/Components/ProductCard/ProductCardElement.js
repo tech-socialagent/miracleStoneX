@@ -5,7 +5,7 @@ export const CardWrap = styled.div`
     flex: 1 1 16rem;
     margin: 10px 20px;
     box-shadow: 0 0 15px rgba(0,0,0,0.4);
-    height: 480px;
+    height: max-content;
     align-self: normal;
     border: 1px #000 solid;
     max-width: 300px;

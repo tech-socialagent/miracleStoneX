@@ -63,6 +63,17 @@ export const FormWrap = styled.div`
         outline: none;
         background: #F0F0F0;
     }
+    textarea{
+        margin-top: 5%;
+        height: 50px;
+        border: none;
+        font-size: 20px;
+        border-bottom: 1px #000 solid;
+    }
+    textarea:focus{
+        outline: none;
+        background: #F0F0F0;
+    }
     @media screen and (max-width: 750px){
         width: 80%;
     }

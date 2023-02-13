@@ -1,21 +1,21 @@
 import React, { useState } from 'react'
 // import './CompanyProcess.css'
-import { Wrap, Title, Desc, Process, ProcessLine, ProcessContent, Content, Image, NumberWrap, NumberContent, Number, Text} from './CompanyProcessElements'
+import { Wrap, Title, Desc, Process, ProcessLine, List, Line, ProcessContent, Content, Image, NumberWrap, NumberContent, Number, Text } from './CompanyProcessElements'
 
 const CompanyProcess = () => {
 
   const numberData = [
     {
       number: "3000+",
-      text: "Lorem Ipsum"
+      text: "Customer"
     },
     {
-      number: "3000+",
-      text: "Lorem Ipsum"
+      number: "4+",
+      text: "Location"
     },
     {
-      number: "3000+",
-      text: "Lorem Ipsum"
+      number: "70+",
+      text: "Products"
     },
   ]
 
@@ -23,9 +23,19 @@ const CompanyProcess = () => {
     <Wrap>
       <Title>Company Process</Title>
       <Desc>Miracle Stone granite company ensures that each customer receives the highest quality products and services, and a seamless and stress-free experience.</Desc>
-      <Process>
+      {/* <Process>
         <ProcessLine>
-          {/* one<hr />two */}
+          <List>Selection</List>
+          <Line />
+          <List>Measurment</List>
+          <Line />
+          <List>Fabrication</List>
+          <Line />
+          <List>Quality Control</List>
+          <Line />
+          <List>Installation</List>
+          <Line />
+          <List>Customer Service</List>
         </ProcessLine>
         <ProcessContent>
           <Content>
@@ -33,7 +43,7 @@ const CompanyProcess = () => {
           </Content>
           <Image src="" alt="Images" />
         </ProcessContent>
-      </Process>
+      </Process> */}
       <NumberWrap>
         {numberData.map((item, key) => (
           <NumberContent key={key} >
@@ -41,7 +51,6 @@ const CompanyProcess = () => {
             <Text>{item.text} </Text>
           </NumberContent>
         ))}
-
 
       </NumberWrap>
     </Wrap>
