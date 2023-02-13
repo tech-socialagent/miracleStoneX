@@ -1,50 +1,50 @@
 import React from 'react'
 import { Title, Desc } from '../Map/MapElement'
 import { OurClientWrap, ClientsList, TopSection, LeftSection, RightSection, LogoElement } from './OurClientsElement'
-import logoIcon from '../../../assets/logoElement.png'
+import client01 from '../../../assets/clients/client01.png'
 
 const OurClients = () => {
 
     const clientsList = [
         {
             alt: "clientName1",
-            src: ""
+            src: client01
         },
         {
             alt: "clientName2",
-            src: ""
+            src: client01
         },
         {
             alt: "clientName3",
-            src: ""
+            src: client01
         },
         {
             alt: "clientName4",
-            src: ""
+            src: client01
         },
         {
             alt: "clientName5",
-            src: ""
+            src: client01
         },
         {
             alt: "clientName6",
-            src: ""
+            src: client01
         },
         {
             alt: "clientName7",
-            src: ""
+            src: client01
         },
         {
             alt: "clientName8",
-            src: ""
+            src: client01
         },
         {
             alt: "clientName9",
-            src: ""
+            src: client01
         },
         {
             alt: "clientName10",
-            src: ""
+            src: client01
         }
     ]
 

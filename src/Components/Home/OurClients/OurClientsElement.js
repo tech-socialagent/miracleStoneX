@@ -6,6 +6,9 @@ export const OurClientWrap = styled.div`
     padding-bottom: 5%;
     border-bottom: solid 1px;
     height: 100%;
+    @media screen and (max-width: 750px){
+      padding: 3%;
+    }
 `;
 export const TopSection = styled.div`
     display: flex;
@@ -29,7 +32,17 @@ export const ClientsList = styled.div`
     padding-right: 40px;
     margin-top: 20px;
     img{
-        width: calc(100% / 5);
+        width: calc(90% / 5);
         height: auto;
+        margin: 8px;
+    }
+    @media screen and (max-width: 750px){
+        padding-left: 0px;
+        padding-right: 0px;
+        img{
+            width: calc(90% / 3.2);
+            height: auto;
+            margin: 8px;
+    }
     }
 `;

@@ -6,6 +6,7 @@ import AboutUs from './Pages/AboutUs';
 import Granite from './Pages/Granite';
 import Marble from './Pages/Marble';
 import { ColorContext } from './Context';
+import GetInTouchPage from './Pages/GetInTouchPage';
 
 function App() {
   const [color, setColor] = useState(0);
@@ -17,6 +18,7 @@ function App() {
           <Route path='/aboutUs' element={<AboutUs />} />
           <Route path='/granite' element={<Granite />} />
           <Route path='/marble' element={<Marble />} />
+          <Route path='/GetInTouch' element={<GetInTouchPage />} />
         </Routes>
       </Router>
     </ColorContext.Provider>

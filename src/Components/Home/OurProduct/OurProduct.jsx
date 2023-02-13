@@ -19,9 +19,10 @@ function OurProduct() {
           <img src={image} alt="img" />
           <h1>Granite</h1>
           <GContent>
-            <p>Granite content</p>
+            <p style={{textAlign: 'center', paddingLeft: '10%', paddingRight: '10%'}} >Among the oldest formation of stone, now in newer and a dazzling array of finishes at Miracle Stonex.
+              Granite will never be the same again.</p>
             <button
-             onClick={()=> navigate('/granite')}
+              onClick={() => navigate('/granite')}
             >Explore</button>
           </GContent>
         </Granite>
@@ -29,9 +30,10 @@ function OurProduct() {
           <img src={image} alt="img" />
           <h1>Marble</h1>
           <MContent>
-            <p>Marble content</p>
-            <button
-            onClick={()=> navigate('/marble')}
+            <p style={{textAlign: 'center', paddingLeft: '10%', paddingRight: '10%'}} >Among the oldest formation of stone, now in newer and a dazzling array of finishes at Miracle Stonex.
+              Granite will never be the same again.</p>
+            <button 
+              onClick={() => navigate('/marble')}
             >Explore</button>
           </MContent>
         </Marble>

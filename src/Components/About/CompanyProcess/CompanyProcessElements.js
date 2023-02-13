@@ -3,6 +3,9 @@ import styled from "styled-components";
 export const Wrap = styled.div`
     padding: 5%;
     padding-top: 3%;
+    @media screen and (max-width: 750px){
+      padding: 3%;
+    }
 `;
 
 export const Title = styled.div`
@@ -61,11 +64,13 @@ export const NumberWrap = styled.div`
     justify-content: space-around;
     align-items: center;
     padding-top: 5%;
+    gap: 0;
     @media screen and (max-width: 750px){
        flex-wrap: wrap;
+       flex: 1 1 10rem;
+       gap: 20px;
     }
-
-    
+ 
 `;
 
 export const NumberContent = styled.div`
@@ -73,6 +78,7 @@ export const NumberContent = styled.div`
     flex-direction: column;
     margin-top: 10px;
     align-items: center;
+    flex-wrap: wrap;
 `;
 
 export const Number = styled.div`

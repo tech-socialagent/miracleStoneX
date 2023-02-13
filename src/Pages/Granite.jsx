@@ -1,5 +1,5 @@
 import React from 'react'
-import TopSection from '../Components/Granite/TopSection/Granite'
+import TopSection from '../Components/Granite/TopSection/GraniteMarble'
 import ProductList from '../Components/Granite/ProductList/ProductList'
 import NavBar from '../Components/NavBar/NavBar'
 import { useEffect } from "react";
@@ -16,7 +16,7 @@ const Granite = () => {
     <>
     <NavBar />
     <TopSection />
-    <ProductList page={'Granite'} />
+    <ProductList />
     </>
   )
 }

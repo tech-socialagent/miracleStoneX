@@ -11,7 +11,7 @@ export const SlideWrap = styled.div`
     background: #fff;
     padding-top: 150px;
     z-index: 10;
-    /* transition: .3s ease-in-out; */
+    transition: .3s ease-in-out;
     opacity: ${({ isOpen }) => (isOpen ? '100%' : '0')};
     display: flex;
     justify-content: center;
@@ -34,6 +34,18 @@ export const ItemProduct = styled(HashLink)`
     }
 `;
 export const Item = styled(Link)`
+    color: red;
+    text-decoration:none ;
+    margin-top: 70%;
+    font-size: 24px;
+    padding-left: 10px;
+
+    &:hover{
+        cursor: pointer;
+        color: var(--secondary-color);
+    }
+`;
+export const GetInTouch = styled(Link)`
     color: red;
     text-decoration:none ;
     margin-top: 70%;

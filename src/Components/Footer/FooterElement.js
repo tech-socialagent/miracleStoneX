@@ -51,6 +51,10 @@ export const PagewLink =styled(Link)`
 export const SocialIcon = styled.div`
     display: flex;
     color: rgba(0, 0, 0, 0.5);
+    a{
+        margin: 5px;
+        font-size: 30px;
+    }
 
 `;
 
@@ -76,6 +80,7 @@ export const MobileView = styled.div`
     @media screen and (max-width: 750px){
        display: flex;
        flex-direction: column;
+       align-items: center;
     }
 
 `;

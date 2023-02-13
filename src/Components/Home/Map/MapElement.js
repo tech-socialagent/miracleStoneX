@@ -5,6 +5,9 @@ export const MapWrap = styled.div`
     padding-top: 3%;
     padding-bottom: 5%;
     border-bottom: solid 1px;
+    @media screen and (max-width: 750px){
+      padding: 3%;
+    }
     
 `;
 
@@ -32,9 +35,13 @@ export const IndiaMap = styled.div`
     justify-content: center;
     align-items: center;
     height: max-content;
+    position: relative;
     margin-top: 5%;
     img {
         width: 80%;
-        /* height: 100%; */
     }
+`;
+
+export const Mark = styled.img`
+    
 `;

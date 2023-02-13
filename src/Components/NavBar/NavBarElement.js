@@ -51,7 +51,7 @@ export const ItemProduct = styled(HashLink)`
     
 `;
 
-export const LogoWrap = styled.div`
+export const LogoWrap = styled(Link)`
     margin: 0px 6%;
 `;
 export const Logo = styled.img`
@@ -68,6 +68,11 @@ export const Btn = styled.button`
     border-color: var(--primary-color);
     border: 1px;
     border-style: solid;
+
+    &:hover{
+        cursor: pointer;
+        color: var(--secondary-color);
+    }
 `;
 
 export const MobileView = styled.div`
@@ -87,7 +92,7 @@ export const MobileView = styled.div`
     }
 
 `;
-export const LogoWrapMobile = styled.div`
+export const LogoWrapMobile = styled(Link)`
     padding: 0px 6%;
     width: 70%;
 `;
@@ -101,4 +106,5 @@ export const Hamburger = styled.div`
     display: flex;
     justify-content: end;
     align-items: center;
+    font-size: 40px;
 `;

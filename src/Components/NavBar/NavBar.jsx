@@ -5,19 +5,24 @@ import { useLocation } from "react-router-dom";
 import { GiHamburgerMenu } from 'react-icons/gi'
 import { GrClose } from 'react-icons/gr'
 import SlideBar from '../SlideBar/SlideBar';
+import { Link } from 'react-router-dom';
 
 
 const NavBar = () => {
   const { pathname } = useLocation();
   const [isOpen, setIsOpen] = useState(false)
 
+  const HandleHome = () => {
+    window.scrollTo(0, 0);
+  }
+
   return (
     <>
       <NavWrap>
         <NavList  >
-          <ItemHome pathname={pathname} to='/'>HOME</ItemHome>
+          <ItemHome onClick={() => HandleHome()} pathname={pathname} to='/'>HOME</ItemHome>
           <ItemAbout pathname={pathname} to='/aboutUs'>ABOUT US</ItemAbout>
-          <LogoWrap>
+          <LogoWrap onClick={() => HandleHome()} to='/' >
             <Logo src={logo} alt="Logo" />
           </LogoWrap>
           <ItemProduct to='/#products'
@@ -25,11 +30,13 @@ const NavBar = () => {
             duration={500}
             spy={true.toString()}
           >PRODUCTS</ItemProduct>
-          <Btn>GET IN TOUCH</Btn>
+          <Link to='/GetInTouch'>
+            <Btn>GET IN TOUCH</Btn>
+          </Link>
         </NavList>
       </NavWrap>
       <MobileView >
-        <LogoWrapMobile>
+        <LogoWrapMobile onClick={() => HandleHome()} to='/' >
           <LogoMobile src={logo} alt="Logo" />
         </LogoWrapMobile >
         <Hamburger onClick={() => setIsOpen(!isOpen)} >

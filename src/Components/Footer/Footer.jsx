@@ -1,6 +1,8 @@
 import React from 'react'
 import { FooterWrap, LogoSection, LinkSection, SocialIcon, ContactCard, PagewLink, MobileView } from './FooterElement'
 import logo from '../../assets/logoElement.png';
+import {BsFacebook, BsLinkedin} from 'react-icons/bs'
+import {AiFillInstagram, AiFillTwitterCircle, AiFillYoutube} from 'react-icons/ai'
 
 
 
@@ -19,11 +21,11 @@ const Footer = () => {
                     <PagewLink to='/getInTouch' >Get In Touch</PagewLink>
                 </LinkSection>
                 <SocialIcon>
-                    <a href=""><img src="" alt="icons" /></a>
-                    <a href=""><img src="" alt="icons" /></a>
-                    <a href=""><img src="" alt="icons" /></a>
-                    <a href=""><img src="" alt="icons" /></a>
-                    <a href=""><img src="" alt="icons" /></a>
+                    <a href=""><BsFacebook style={{color: '#3C5A9A'}} /></a>
+                    <a href=""><AiFillInstagram style={{color: '#A2359D'}} /></a>
+                    <a href=""><BsLinkedin style={{color: ' #2878B7'}} /></a>
+                    <a href=""><AiFillTwitterCircle style={{color: '#1DA1F2'}} /></a>
+                    <a href=""><AiFillYoutube style={{color: '#FF0000'}} /></a>
                 </SocialIcon>
                 <ContactCard>
                     <h2 >Contact</h2>
@@ -34,16 +36,16 @@ const Footer = () => {
                 </ContactCard>
             </FooterWrap>
             <MobileView>
-                <div style={{ display: 'flex', alignItems: 'center' }}>
+                <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
                     <LogoSection>
                         <img src={logo} alt="Logo" />
                     </LogoSection>
                     <SocialIcon>
-                        <a href=""><img src="" alt="icons" /></a>
-                        <a href=""><img src="" alt="icons" /></a>
-                        <a href=""><img src="" alt="icons" /></a>
-                        <a href=""><img src="" alt="icons" /></a>
-                        <a href=""><img src="" alt="icons" /></a>
+                    <a href=""><BsFacebook style={{color: '#3C5A9A'}} /></a>
+                    <a href=""><AiFillInstagram style={{color: '#A2359D'}} /></a>
+                    <a href=""><BsLinkedin style={{color: ' #2878B7'}} /></a>
+                    <a href=""><AiFillTwitterCircle style={{color: '#1DA1F2'}} /></a>
+                    <a href=""><AiFillYoutube style={{color: '#FF0000'}} /></a>
                     </SocialIcon>
                 </div>
                 <LinkSection>

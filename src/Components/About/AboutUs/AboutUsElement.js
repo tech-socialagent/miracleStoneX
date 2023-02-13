@@ -54,6 +54,12 @@ export const SecondSection = styled.div`
     justify-content: space-around;
     text-align: center;
     margin-top: 30px;
+    padding-left: 5%;
+    padding-right: 5%;
+    gap: 10px;
+    @media screen and (max-width: 750px){
+        gap: 20px;      
+    }
 `;
 
 export const Card = styled.div`
@@ -76,6 +82,12 @@ export const Card = styled.div`
         background-clip: text;
         text-fill-color: transparent;
         border-color: rgba(251, 174, 23, 0.7);
+    }
+    @media screen and (max-width: 750px){
+        padding-top: 0%;
+        padding-bottom: 0%;
+        height: 200px;
+
     }
 
 `;

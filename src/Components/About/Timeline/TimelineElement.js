@@ -3,6 +3,10 @@ import styled from "styled-components";
 export const Wrap = styled.div`
     padding: 5%;
     padding-top: 3%;
+    @media screen and (max-width: 750px){
+      padding: 3%;
+      margin-top: 5%;
+    }
 `;
 
 export const Title = styled.div`

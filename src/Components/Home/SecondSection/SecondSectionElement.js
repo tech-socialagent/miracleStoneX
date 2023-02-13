@@ -43,16 +43,20 @@ export const Desc = styled.div`
 `;
  
 export const Righ = styled.div`
-     width: 40%;
+    width: 40%;
+    display: flex;
+    justify-content: flex-end;
 
      @media screen and (max-width: 750px){
-       width: 100%;
+        display: flex;
+        justify-content: center;
+        width: 100%;
     }
 
 `;
  
-export const Element = styled.div`
-display: flex;
+export const Element = styled.img`
+    display: flex;
     justify-content: center;
     align-items: center;
 `;

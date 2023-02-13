@@ -5,9 +5,9 @@ export const BannerWrap = styled.div`
     position: relative;
 `;
 export const Video = styled.video`
-    background: red;
     height: 100%;
     width: 100%;
+    object-fit: cover;
 `;
 export const Content = styled.div`
     position: absolute;
@@ -21,6 +21,7 @@ export const Content = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    color: #fff;
 
 `;
 export const Title = styled.h1`

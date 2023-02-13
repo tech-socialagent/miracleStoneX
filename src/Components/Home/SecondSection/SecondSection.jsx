@@ -1,5 +1,7 @@
 import React from 'react'
 import {SectionWrap, Left, Title, Desc, Righ, Element} from './SecondSectionElement'
+import diamond from '../../../assets/diamond.svg'
+
 
 const SecondSection = () => {
     return (
@@ -12,7 +14,7 @@ const SecondSection = () => {
                     Our company has a wide range of colours, patterns, and textures to choose from, allowing customers to select the perfect stone for their project. Furthermore, the company offers customised services, such as custom cutting and shaping, to ensure that each piece fits perfectly into the customer's design.</Desc>
             </Left>
             <Righ>
-                <Element>Image</Element>
+                <Element src={diamond} />
             </Righ>
         </SectionWrap>
     )

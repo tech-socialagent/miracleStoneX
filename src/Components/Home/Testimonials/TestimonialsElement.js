@@ -6,6 +6,9 @@ export const TestimonialsWrap = styled.div`
     padding-bottom: 5%;
     border-bottom: solid 1px;
     height: 100%;
+    @media screen and (max-width: 750px){
+      padding: 3%;
+    }
 `;
 
 

@@ -48,6 +48,7 @@ export const Product = styled.div`
 
     button:hover{
         background: #FBAE17;
+        cursor: pointer;
     }
     @media screen and (max-width: 750px){
        flex-direction: column;
@@ -67,6 +68,9 @@ export const Granite = styled.div`
 
     img{
         width: 100%;
+        height: 340px;
+        object-fit: cover;
+        border-radius: 10px;
     }
 
     &:hover{
@@ -92,6 +96,9 @@ export const Marble = styled.div`
 
     img{
         width: 100%;
+        border-radius: 10px;
+        object-fit: cover;
+        height: 340px;
     }
 
     h1{
