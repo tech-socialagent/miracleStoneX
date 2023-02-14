@@ -28,8 +28,8 @@ const Footer = () => {
                     </SocialIcon>
                     <ContactCard>
                         <h2 >Contact</h2>
-                        <p>SY.NO. 702/2 & 711/2B, Thirumala Kota Road, 
-                            Near Kamandoddi, Konerpalli Post, 
+                        <p>SY.NO. 702/2 & 711/2B, Thirumala Kota Road,
+                            Near Kamandoddi, Konerpalli Post,
                             Pillaikothur Village, Krishnagiri District - 6351177<br />
                             Tamil Nadu, India<br />
                             Mobile No: +91 99866 62488
@@ -37,9 +37,9 @@ const Footer = () => {
                     </ContactCard>
 
                 </FooterWrap>
-                    <WritesDesk style={{ textAlign: 'center', marginTop: '10px' }}>
-                        Miracle Stonex © 2023 All Right Reserved.
-                    </WritesDesk>
+                <WritesDesk style={{ textAlign: 'center', marginTop: '10px' }}>
+                    Miracle Stonex © 2023 All Right Reserved.
+                </WritesDesk>
             </div>
             <MobileView>
                 <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
@@ -61,10 +61,12 @@ const Footer = () => {
                 </LinkSection>
                 <ContactCard>
                     <h2 >Contact</h2>
-                    <p>PLOT NO 33, APIIC BULIDING PRODUCTS SEZ
-                        ANANGI VILLAGE MADDIPADU MANDAL, Andhra Pradesh 523211<br />
-                        <span style={{ fontWeight: 'bold' }}>PHONE NUMBER:</span> +91 91771 95555, +91 9573148794<br />
-                        <span style={{ fontWeight: 'bold' }}>EMAIL ID:</span> info@anaghastones.com</p>
+                    <p>SY.NO. 702/2 & 711/2B, Thirumala Kota Road,
+                        Near Kamandoddi, Konerpalli Post,
+                        Pillaikothur Village, Krishnagiri District - 6351177<br />
+                        Tamil Nadu, India<br />
+                        Mobile No: +91 99866 62488
+                    </p>
                 </ContactCard>
                 <h6 style={{ textAlign: 'center', marginTop: '10px' }}>
                     Miracle Stonex © 2023 All Right Reserved.
