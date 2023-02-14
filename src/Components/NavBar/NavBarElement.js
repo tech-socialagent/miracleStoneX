@@ -33,13 +33,20 @@ export const NavList = styled.div`
 
 export const ItemHome = styled(Link)`
     margin: 0px 2%;
+    width: max-content;
     color: ${({ pathname }) => (pathname == '/' ? 'var(--secondary-color)' : 'var(--primary-color)')} ;
-    text-decoration:  none;    
+    text-decoration:  none; 
+    &:hover{
+        color: var(--secondary-color);
+    }   
 `;
 export const ItemAbout = styled(Link)`
     margin: 0px 2%;
     color: ${({ pathname }) => (pathname == '/aboutUs' ? 'var(--secondary-color)' : 'var(--primary-color)')} ;
-    text-decoration:  none;    
+    text-decoration:  none; 
+    &:hover{
+        color: var(--secondary-color);
+    }   
 `;
 
 
@@ -48,7 +55,9 @@ export const ItemProduct = styled(HashLink)`
     color: var(--primary-color);
     text-decoration:  none;
     cursor: pointer;
-    
+    &:hover{
+        color: var(--secondary-color);
+    }
 `;
 
 export const LogoWrap = styled(Link)`
@@ -84,7 +93,7 @@ export const MobileView = styled.div`
     left: 0;
     z-index: 999;
     background:#FFFFFF;
-    height: 70px;
+    height: 100%;
     align-items: center;
 
     @media screen and (max-width: 750px){

@@ -18,6 +18,7 @@ export const Filter = styled.div`
     position: -webkit-sticky;
     top: 15%;
     height: max-content;
+    display: ${({current}) => (current == 'granite' ? 'block' : 'none')};
 
     @media screen and (max-width: 750px){
        border: none;

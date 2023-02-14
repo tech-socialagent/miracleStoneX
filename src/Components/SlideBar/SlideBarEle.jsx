@@ -1,15 +1,15 @@
 import { Link } from "react-router-dom";
-import { HashLink } from "react-router-hash-link"; 
+import { HashLink } from "react-router-hash-link";
 import styled from "styled-components"
 
 export const SlideWrap = styled.div`
     position: fixed;
     top: 0;
-    right: ${({isOpen}) => (isOpen ? '0' : '-100%')};
+    right: ${({ isOpen }) => (isOpen ? '0' : '-100%')};
     height: 100vh;
     width: 100%;
     background: #fff;
-    padding-top: 150px;
+    padding-top: 10%;
     z-index: 10;
     transition: .3s ease-in-out;
     opacity: ${({ isOpen }) => (isOpen ? '100%' : '0')};
@@ -22,7 +22,7 @@ export const Links = styled.div`
     align-items: center;
 `;
 export const ItemProduct = styled(HashLink)`
-    color: red;
+    color: var(--primary-color);
     text-decoration:none ;
     margin-top: 70%;
     font-size: 24px;
@@ -34,7 +34,7 @@ export const ItemProduct = styled(HashLink)`
     }
 `;
 export const Item = styled(Link)`
-    color: red;
+    color: var(--primary-color);
     text-decoration:none ;
     margin-top: 70%;
     font-size: 24px;
@@ -46,11 +46,15 @@ export const Item = styled(Link)`
     }
 `;
 export const GetInTouch = styled(Link)`
-    color: red;
-    text-decoration:none ;
     margin-top: 70%;
     font-size: 24px;
     padding-left: 10px;
+`;
+export const Btn = styled.button`
+    color: var(--primary-color);
+    
+    border: 2px var(--primary-color) solid;
+    background: transparent;
 
     &:hover{
         cursor: pointer;

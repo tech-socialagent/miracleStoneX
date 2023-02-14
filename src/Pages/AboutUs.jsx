@@ -19,7 +19,7 @@ const AboutUs = () => {
       <NavBar />
       <AboutCom />
       <CompanyProcess />
-      <Timeline />
+      {/* <Timeline /> */}
       <Footer />
     </>
   )

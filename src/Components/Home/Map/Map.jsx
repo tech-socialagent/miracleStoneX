@@ -1,7 +1,6 @@
-import React, { useState } from 'react'
-import { MapWrap, Title, Desc, IndiaMap, Mark } from './MapElement'
+import React, {  } from 'react'
+import { MapWrap, Title, Desc, IndiaMap } from './MapElement'
 import map from '../../../assets/map.png'
-import mark from '../../../assets/yellowIcon.png'
 
 const Map = () => {
     return (
@@ -10,8 +9,7 @@ const Map = () => {
                 Our Presence
             </Title>
             <Desc>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet,
-                consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Miracle StoneX is a leading provider of high-quality granite products and services, serving the global market with a focus on customer satisfaction and excellence.
             </Desc>
             <IndiaMap >
                 <img src={map} alt="India Map" useMap='#markMap' />

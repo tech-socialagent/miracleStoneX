@@ -1,5 +1,5 @@
 import React from 'react'
-import { FooterWrap, LogoSection, LinkSection, SocialIcon, ContactCard, PagewLink, MobileView } from './FooterElement'
+import { FooterWrap, LogoSection, LinkSection, SocialIcon, ContactCard, PagewLink, PagewLinkProduct, MobileView } from './FooterElement'
 import logo from '../../assets/logoElement.png';
 import { BsFacebook, BsLinkedin } from 'react-icons/bs'
 import { AiFillInstagram, AiFillTwitterCircle, AiFillYoutube } from 'react-icons/ai'
@@ -18,7 +18,7 @@ const Footer = () => {
                         <h2 style={{ color: "red", margin: '0' }} >Links</h2>
                         <PagewLink to='/' >Home</PagewLink>
                         <PagewLink to='/aboutUs' >About</PagewLink>
-                        <PagewLink to='/products' >Products</PagewLink>
+                        <PagewLinkProduct to='/#products' >Products</PagewLinkProduct>
                         <PagewLink to='/getInTouch' >Get In Touch</PagewLink>
                     </LinkSection>
                     <SocialIcon>
@@ -58,7 +58,7 @@ const Footer = () => {
                     <h2 style={{ color: "red", margin: '0' }} >Links</h2>
                     <PagewLink to='/' >Home</PagewLink>
                     <PagewLink to='/aboutUs' >About</PagewLink>
-                    <PagewLink to='/products' >Products</PagewLink>
+                    <PagewLinkProduct to='/#products' >Products</PagewLinkProduct>
                     <PagewLink to='/getInTouch' >Get In Touch</PagewLink>
                 </LinkSection>
                 <ContactCard>

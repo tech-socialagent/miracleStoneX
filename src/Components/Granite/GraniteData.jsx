@@ -160,7 +160,7 @@ export const graniteData = [
     },
 
     {
-        id: ' MaharajaWhite',
+        id: 'MaharajaWhite',
         Name: ' Maharaja White',
         desc: 'Maharaja White granite is a type of natural stone that is prized for its unique appearance and durability. It is a white-based granite with subtle grey and black veins that run throughout the surface The classic, timeless look of Maharaja White granite makes it a popular choice for those seeking a sophisticated and elegant design element in their home or commercial space.',
         color: 'White',
@@ -280,7 +280,7 @@ export const graniteData = [
     },
 
     {
-        id: ' Copacabana',
+        id: 'Copacabana',
         Name: 'Copacabana',
         desc: 'Copacabana Granite, also known as Black Horse granite that features black, white and beige with striking wavy veins for an extraordinary visual impact. This durable granite is ideal for counter tops, kitchen and bathroom, wall applications and flooring.',
         color: 'Black',

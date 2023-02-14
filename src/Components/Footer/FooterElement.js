@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { Link } from 'react-router-dom'
+import { HashLink } from "react-router-hash-link";
 
 export const FooterWrap= styled.div`
     display: flex;
@@ -37,6 +38,17 @@ export const LinkSection = styled.div`
 `;
 
 export const PagewLink =styled(Link)`
+        text-decoration: none;
+        color: rgba(0, 0, 0, 0.5);
+        margin-top: 5px;
+        transition: 0.3s;
+
+        &:hover{
+         cursor: pointer; 
+         color: var(--primary-color);
+        }
+`;
+export const PagewLinkProduct =styled(HashLink)`
         text-decoration: none;
         color: rgba(0, 0, 0, 0.5);
         margin-top: 5px;

@@ -1,7 +1,8 @@
 import React from 'react'
 import { Title, Desc } from '../Map/MapElement'
 import { OurProductWrap, Product, Granite, Marble, MContent, GContent } from './OurProductElement'
-import image from "../../../assets/graniteHome.jpg"
+import image1 from "../../../assets/graniteHome.jpg"
+import image2 from "../../../assets/graniteImages/Ice-Blue.jpg"
 import { useNavigate } from "react-router-dom";
 
 function OurProduct() {
@@ -16,23 +17,21 @@ function OurProduct() {
       </Desc>
       <Product>
         <Granite>
-          <img src={image} alt="img" />
+          <img src={image1} alt="img" />
           <h1>Granite</h1>
           <GContent>
-            <p style={{textAlign: 'center', paddingLeft: '10%', paddingRight: '10%'}} >Among the oldest formation of stone, now in newer and a dazzling array of finishes at Miracle Stonex.
-              Granite will never be the same again.</p>
+            <p style={{ textAlign: 'center', paddingLeft: '10%', paddingRight: '10%' }} >Granite is formed from slow-cooling magma, which gives it its unique mineral composition and texture. It is known for its durability, strength, and beauty, making it a popular choice for counter tops, flooring, wall cladding, and more.</p>
             <button
               onClick={() => navigate('/granite')}
             >Explore</button>
           </GContent>
         </Granite>
         <Marble>
-          <img src={image} alt="img" />
+          <img src={image2} alt="img" />
           <h1>Marble</h1>
           <MContent>
-            <p style={{textAlign: 'center', paddingLeft: '10%', paddingRight: '10%'}} >Among the oldest formation of stone, now in newer and a dazzling array of finishes at Miracle Stonex.
-              Granite will never be the same again.</p>
-            <button 
+            <p style={{ textAlign: 'center', paddingLeft: '10%', paddingRight: '10%' }} >Marbles are made from a variety of materials including natural stones like granite, limestone, and serpentine, as well as synthetic materials like glass, ceramics, and plastic..</p>
+            <button
               onClick={() => navigate('/marble')}
             >Explore</button>
           </MContent>
