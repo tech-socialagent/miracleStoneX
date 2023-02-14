@@ -10,6 +10,7 @@ export const CardWrap = styled.div`
     border: 1px #000 solid;
     max-width: 380px;
     min-width: 200px;
+    min-height: 320px;
     @media screen and (max-width: 750px){
         min-width: 35%;
         max-width: 42%;

@@ -4,12 +4,14 @@ import Footer from '../Components/Footer/Footer';
 import { graniteData } from '../Components/Granite/GraniteData';
 import { marbleData } from '../Components/Granite/MarbleData';
 import NavBar from '../Components/NavBar/NavBar';
+import styled from 'styled-components';
 
 
-const ProductPage = ({page}) => {
+const ProductPage = ({ page }) => {
     const { pathname } = useLocation();
     let product = '';
-    console.log("page",page);
+
+
 
     let data = [];
     if (page == 'granite') {
@@ -27,6 +29,20 @@ const ProductPage = ({page}) => {
         window.scrollTo(0, 0);
     }, [pathname]);
 
+
+
+
+    //styled components
+    const P = styled.p`
+        width: 100%;
+        padding: 3%;
+        font-size: 30px;
+        @media screen and (max-width: 750px){
+        font-size: 15px;
+    }
+    `;
+
+
     return (
         <div>
             <NavBar />
@@ -37,7 +53,7 @@ const ProductPage = ({page}) => {
                         <div key={key}>
                             <h1 style={{ color: 'var(--secondary-color)', paddingLeft: '3%', fontSize: '40px' }} >{item.Name}</h1>
                             <img style={{ width: '100%', padding: '3%', paddingBottom: '0', paddingTop: '0' }} src={item.image} alt="" />
-                            <p style={{ width: '100%', padding: '3%', paddingTop: '3%', fontSize: '30px' }} >{item.desc}</p>
+                            <P>{item.desc}</P>
                         </div>
                     )
             })}

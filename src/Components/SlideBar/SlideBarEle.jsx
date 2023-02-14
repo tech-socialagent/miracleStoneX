@@ -15,16 +15,20 @@ export const SlideWrap = styled.div`
     opacity: ${({ isOpen }) => (isOpen ? '100%' : '0')};
     display: flex;
     justify-content: center;
+    align-items: center;
+    
 `;
 export const Links = styled.div`
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+   display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6, 80px);
+    text-align:  center;
+    padding-left: 0px;
 `;
 export const ItemProduct = styled(HashLink)`
     color: var(--primary-color);
     text-decoration:none ;
-    margin-top: 70%;
+    /* margin-top: 50%; */
     font-size: 24px;
     padding-left: 10px;
 
@@ -36,7 +40,7 @@ export const ItemProduct = styled(HashLink)`
 export const Item = styled(Link)`
     color: var(--primary-color);
     text-decoration:none ;
-    margin-top: 70%;
+    /* margin-top: 50%; */
     font-size: 24px;
     padding-left: 10px;
 
@@ -46,7 +50,7 @@ export const Item = styled(Link)`
     }
 `;
 export const GetInTouch = styled(Link)`
-    margin-top: 70%;
+   /* margin-top: 50%; */
     font-size: 24px;
     padding-left: 10px;
 `;

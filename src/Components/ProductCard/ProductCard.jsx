@@ -22,7 +22,7 @@ const ProductCard = ({ name, desc, image, id, page }) => {
         onClick={() => setReadActive(!readActive)}
         style={{ color: 'blue', fontSize: '10px', marginTop: '5px', cursor: 'pointer' }} >{readActive ? 'Less..' : 'Read more'}</div>
       <Btn>
-        <button style={{cursor: 'pointer'}} onClick={() => navigate('/GetInTouch')}>Enquiry</button>
+        <button style={{cursor: 'pointer', color: '#000'}} onClick={() => navigate('/GetInTouch')}>Enquiry</button>
       </Btn>
     </CardWrap>
   )
