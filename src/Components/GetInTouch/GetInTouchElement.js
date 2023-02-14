@@ -40,7 +40,7 @@ export const Right = styled.div`
 }    
 `;
 
-export const FormWrap = styled.div`
+export const FormWrap = styled.form`
     background: #fff;
     width: 60%;
     padding: 15px;

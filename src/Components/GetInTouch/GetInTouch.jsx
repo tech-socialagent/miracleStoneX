@@ -3,6 +3,34 @@ import logo from '../../assets/logoElement.png'
 import { Wrap, Left, Right, FormWrap, TopSection, } from './GetInTouchElement'
 
 const GetInTouch = () => {
+
+  const submitHandle = (e) => {
+    e.preventDefault();
+    const config = {
+      SecureToken: "1dfb9b4e-56d6-4389-a5bf-d9697c345f9e",
+      To: 'tspavan01@gmail.com',
+      From: "info@miraclestonex.co.in",
+      Subject: "This is the subject TEST",
+      Body: 'TEST',
+    }
+    if (window.Email) {
+      window.Email.send(config).then(() => {
+        alert('data collected')
+        // setSending(false)
+        // setName('')
+        // setAge('')
+        // setGender('')
+        // setEmail('')
+        // setPreference('')
+        // setAge('')
+        // props.setPhoneNo('')
+      });
+    }
+  }
+
+
+
+
   return (
     <Wrap>
       <Left>
@@ -10,7 +38,7 @@ const GetInTouch = () => {
           TO HEAR FROM YOU!</h1>
       </Left>
       <Right>
-        <FormWrap>
+        <FormWrap onSubmit={submitHandle} >
           <TopSection>
             <h2>Enquiry</h2>
             <img src={logo} alt="" />
@@ -21,13 +49,13 @@ const GetInTouch = () => {
           <input required type='tel' placeholder='Contact No.' />
           <input required type='email' placeholder='Email id' />
           <textarea type='text' placeholder='message' />
-          <input type='submit' style={{width: '30%', border: 'none', background: '#FF9634', borderRadius: '5px', color: '#fff'}} />
+          <input type='submit' style={{ width: '30%', border: 'none', background: '#FF9634', borderRadius: '5px', color: '#fff' }} />
         </FormWrap>
       </Right>
       {/* zoho form */}
 
 
-    
+
 
 
 
