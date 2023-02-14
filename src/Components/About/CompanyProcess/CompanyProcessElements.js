@@ -23,6 +23,9 @@ export const Desc = styled.div`
     font-size: 18px;
     line-height: 24px;
     margin-top: 20px;
+    @media screen and (max-width: 750px){
+       font-size: 15px;
+    }
 `;
 
 export const Process = styled.div``;

@@ -33,6 +33,7 @@ export const Content = styled.div`
     @media screen and (max-width: 750px){
         padding-left: 0;
         padding-right: 0;
+        font-size: 15px;
     }
 `;
 

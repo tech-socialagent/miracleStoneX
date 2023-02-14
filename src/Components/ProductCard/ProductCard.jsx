@@ -17,7 +17,7 @@ const ProductCard = ({ name, desc, image, id, page }) => {
     <CardWrap>
       <Image style={{cursor: 'pointer'}} src={image} alt='product Img' onClick={() => navigate('/'+navPage+'/product/' + id)} />
       <Title style={{cursor: 'pointer'}} onClick={() => navigate('/'+navPage+'/product/' + id)} >{name}</Title>
-      <Desc style={{cursor: 'pointer'}} onClick={() => navigate('/'+navPage+'/product/' + id)} >{readActive ? desc.substr(0, 600) : desc.substr(0, 200) + '...'}</Desc>
+      <Desc style={{cursor: 'pointer'}} onClick={() => navigate('/'+navPage+'/product/' + id)} >{readActive ? desc.substr(0, 600) : desc.substr(0, 120) + '...'}</Desc>
       <div
         onClick={() => setReadActive(!readActive)}
         style={{ color: 'blue', fontSize: '10px', marginTop: '5px', cursor: 'pointer' }} >{readActive ? 'Less..' : 'Read more'}</div>

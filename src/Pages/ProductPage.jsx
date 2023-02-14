@@ -36,8 +36,8 @@ const ProductPage = ({page}) => {
                     return (
                         <div key={key}>
                             <h1 style={{ color: 'var(--secondary-color)', paddingLeft: '3%', fontSize: '40px' }} >{item.Name}</h1>
-                            <img style={{ width: '94%', padding: '3%', paddingBottom: '0', paddingTop: '0' }} src={item.image} alt="" />
-                            <p style={{ width: '94%', padding: '3%', paddingTop: '0' }} >{item.desc}</p>
+                            <img style={{ width: '100%', padding: '3%', paddingBottom: '0', paddingTop: '0' }} src={item.image} alt="" />
+                            <p style={{ width: '100%', padding: '3%', paddingTop: '3%', fontSize: '30px' }} >{item.desc}</p>
                         </div>
                     )
             })}

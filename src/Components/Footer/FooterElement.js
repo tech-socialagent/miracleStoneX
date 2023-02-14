@@ -4,8 +4,8 @@ import { Link } from 'react-router-dom'
 export const FooterWrap= styled.div`
     display: flex;
     justify-content: space-between; 
-    padding-left: 5%;
-    padding-right: 5%;
+    padding-left: 8%;
+    padding-right: 8%;
     align-items: center;
     @media screen and (max-width: 750px){
         display: none;

@@ -26,6 +26,7 @@ export const Desc = styled.div`
     width: 65%;
     @media screen and (max-width: 750px){
        width: 100%;
+       font-size: 15px;
     }
 
 `;

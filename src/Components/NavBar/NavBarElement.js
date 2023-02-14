@@ -84,7 +84,7 @@ export const MobileView = styled.div`
     left: 0;
     z-index: 999;
     background:#FFFFFF;
-    height: 30px;
+    height: 70px;
     align-items: center;
 
     @media screen and (max-width: 750px){

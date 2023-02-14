@@ -40,6 +40,10 @@ export const Desc = styled.div`
     font-size: 18px;
     font-style: normal;
     margin-top: 5%;
+
+    @media screen and (max-width: 750px){
+       font-size: 15px;
+    }
 `;
  
 export const Righ = styled.div`

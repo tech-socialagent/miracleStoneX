@@ -81,8 +81,8 @@ export const graniteData = [
 
 
     {
-        id: 'Fusion Gold(ZigZagPattern)',
-        Name: 'Fusion Gold (Zig Zag Pattern )',
+        id: 'FusionGold(ZigZagPattern)',
+        Name: 'Fusion Gold Zig Zag',
         desc: 'Fusion Gold (Zig Zag Pattern ) is a beautiful and unique natural stone that showcases a unique and striking zig-zag pattern in gold and white tones. With its durability and heat resistance. The golden tones of this granite pair well with warm wood cabinetry and light neutral walls, making it a versatile choice for a wide range of design styles.',
         color: 'gold',
         image: require('../../assets/graniteImages/Fusion Gold(ZigZagPattern).jpg'),
@@ -361,7 +361,7 @@ export const graniteData = [
 
     {
         id: 'KuppamGreen',
-        Name: 'Kuppam Green  (New Viscon White)',
+        Name: 'Kuppam Green',
         desc: 'Kuppam green is one amazing variant of granite with a unique pattern and beautiful grayish green shade. This granite from is very popular across the globe and widely employed for a variety of purposes in the construction sector.',
         color: 'Green',
         image: require('../../assets/graniteImages/KuppamGreen(NewViscontWhite).jpg'),
@@ -457,8 +457,8 @@ export const graniteData = [
     },
 
     {
-        id: 'DaVinci',
-        Name: 'Da Vinci (Antique Finish)',
+        id: 'DaVinciAntique',
+        Name: 'Da Vinci(Antique)',
         desc: 'Da Vinci is forest green Quartzite filled with personality that brings design and authenticity to any space. This enduring design standard brings ultra-durable luxury to floors, walls and counter tops. Granite\'s distinctive granular appearance and movement also make it resistant to abrasion and chemicals.Granite delivers lasting durability and distinction.',
         color: 'Silver',
         image: require('../../assets/graniteImages/DaVinci(AntiqueFinish).jpg'),
