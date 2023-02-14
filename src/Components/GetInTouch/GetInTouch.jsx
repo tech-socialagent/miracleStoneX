@@ -1,31 +1,34 @@
-import React from 'react'
+import React, { useState } from 'react'
 import logo from '../../assets/logoElement.png'
 import { Wrap, Left, Right, FormWrap, TopSection, } from './GetInTouchElement'
 
 const GetInTouch = () => {
 
+  const [name, setName] = useState('')
+  const [phone, setPhone] = useState('')
+  const [email, setEmail] = useState('')
+
+
   const submitHandle = (e) => {
+
     e.preventDefault();
     const config = {
-      SecureToken: "1dfb9b4e-56d6-4389-a5bf-d9697c345f9e",
-      To: 'tspavan01@gmail.com',
+      SecureToken: "21ccf322-970a-4da2-a907-ef9ef75ba2b5",
+      To: 'miraclestonex001@gmail.com',
       From: "info@miraclestonex.co.in",
       Subject: "This is the subject TEST",
-      Body: 'TEST',
+      Body: `Name: ${name} \n Email: ${email} \n Phone: +91${phone}`,
     }
     if (window.Email) {
-      window.Email.send(config).then(() => {
-        alert('data collected')
+      window.Email.send(config).then((err) => {
+        alert('data collected', err)
         // setSending(false)
-        // setName('')
-        // setAge('')
-        // setGender('')
-        // setEmail('')
-        // setPreference('')
-        // setAge('')
-        // props.setPhoneNo('')
+        setName('')
+        setEmail('')
+        setPhone('')
       });
     }
+
   }
 
 
@@ -44,10 +47,19 @@ const GetInTouch = () => {
             <img src={logo} alt="" />
           </TopSection>
           <p>Fill out this inquiry form and we will get in touch with you shortly.</p>
-          <input type='text' placeholder='My Name' />
+          <input type='text'
+            value={name}
+            onChange={(e) => setName(e.target.value)}
+            placeholder='My Name' />
           <input type='text' placeholder='Location' />
-          <input required type='tel' placeholder='Contact No.' />
-          <input required type='email' placeholder='Email id' />
+          <input required
+            value={phone}
+            onChange={(e) => setPhone(e.target.value)}
+            type='tel' placeholder='Contact No.' />
+          <input required
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+            type='email' placeholder='Email id' />
           <textarea type='text' placeholder='message' />
           <input type='submit' style={{ width: '30%', border: 'none', background: '#FF9634', borderRadius: '5px', color: '#fff' }} />
         </FormWrap>
