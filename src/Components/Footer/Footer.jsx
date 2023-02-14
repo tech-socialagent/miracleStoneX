@@ -36,10 +36,10 @@ const Footer = () => {
                             EMAIL ID: info@anaghastones.com</p>
                     </ContactCard>
 
+                    <h6 style={{ textAlign: 'center', marginTop: '10px' }}>
+                        Miracle Stonex © 2023 All Right Reserved.
+                    </h6>
                 </FooterWrap>
-                <h6 style={{ textAlign: 'center', marginTop: '10px' }}>
-                    Miracle Stonex © 2023 All Right Reserved.
-                </h6>
             </div>
             <MobileView>
                 <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>

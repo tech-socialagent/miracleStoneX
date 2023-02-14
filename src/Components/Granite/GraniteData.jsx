@@ -81,7 +81,7 @@ export const graniteData = [
 
 
     {
-        id: 'FusionGold(ZigZagPattern)',
+        id: 'FusionGold(ZigZagPattern))',
         Name: 'Fusion Gold Zig Zag',
         desc: 'Fusion Gold (Zig Zag Pattern ) is a beautiful and unique natural stone that showcases a unique and striking zig-zag pattern in gold and white tones. With its durability and heat resistance. The golden tones of this granite pair well with warm wood cabinetry and light neutral walls, making it a versatile choice for a wide range of design styles.',
         color: 'gold',

@@ -4,6 +4,7 @@ import ProductList from '../Components/Granite/ProductList/ProductList'
 import NavBar from '../Components/NavBar/NavBar'
 import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
+import Footer from '../Components/Footer/Footer';
 
 const Marnble = () => {
   const { pathname } = useLocation();
@@ -14,9 +15,10 @@ const Marnble = () => {
 
   return (
     <>
-    <NavBar />
-    <TopSection />
-    <ProductList  />
+      <NavBar />
+      <TopSection />
+      <ProductList />
+      <Footer />
     </>
   )
 }

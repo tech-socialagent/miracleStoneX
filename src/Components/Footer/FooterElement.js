@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { Link } from 'react-router-dom'
 import { HashLink } from "react-router-hash-link";
 
-export const FooterWrap= styled.div`
+export const FooterWrap = styled.div`
     display: flex;
     justify-content: space-between; 
     padding-left: 8%;
@@ -37,7 +37,7 @@ export const LinkSection = styled.div`
 
 `;
 
-export const PagewLink =styled(Link)`
+export const PagewLink = styled(Link)`
         text-decoration: none;
         color: rgba(0, 0, 0, 0.5);
         margin-top: 5px;
@@ -48,7 +48,7 @@ export const PagewLink =styled(Link)`
          color: var(--primary-color);
         }
 `;
-export const PagewLinkProduct =styled(HashLink)`
+export const PagewLinkProduct = styled(HashLink)`
         text-decoration: none;
         color: rgba(0, 0, 0, 0.5);
         margin-top: 5px;

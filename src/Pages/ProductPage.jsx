@@ -17,12 +17,10 @@ const ProductPage = ({ page }) => {
     if (page == 'granite') {
         data = graniteData
         product = 'granite';
-        console.log('granite');
     }
     else {
         data = marbleData;
-        product = 'marble'
-        console.log('marble');
+        product = 'marble';
     }
 
     useEffect(() => {

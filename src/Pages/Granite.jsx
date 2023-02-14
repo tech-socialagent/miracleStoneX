@@ -4,6 +4,7 @@ import ProductList from '../Components/Granite/ProductList/ProductList'
 import NavBar from '../Components/NavBar/NavBar'
 import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
+import Footer from '../Components/Footer/Footer';
 
 const Granite = () => {
   const { pathname } = useLocation();
@@ -17,6 +18,7 @@ const Granite = () => {
     <NavBar />
     <TopSection />
     <ProductList page={'granite'} />
+    <Footer />
     </>
   )
 }
