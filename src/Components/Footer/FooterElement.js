@@ -96,3 +96,8 @@ export const MobileView = styled.div`
     }
 
 `;
+export const WritesDesk = styled.h6`
+    @media screen and (max-width: 750px){
+       display: none;
+    }
+`;

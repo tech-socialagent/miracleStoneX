@@ -8,11 +8,10 @@ const Banner = () => {
             <Video autoPlay loop muted >
                 <source src={video} type="video/mp4" />
             </Video>
-            {/* <Content>
-                <Title>WELCOME TO MIRACLE STONEX</Title>
-                <Desc>India s  largest granite exports firm.</Desc>
-            </Content> */}
-
+            <Content>
+                {/* <Title>WELCOME TO MIRACLE STONEX</Title>
+                <Desc>India's  largest granite exports firm.</Desc> */}
+            </Content>
         </BannerWrap>
     )
 }

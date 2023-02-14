@@ -22,11 +22,13 @@ export const Content = styled.div`
     justify-content: center;
     align-items: center;
     color: #fff;
+    background: #02020282;
 
 `;
 export const Title = styled.h1`
+    font-size: 4vw;
     
 `;
 export const Desc = styled.div`
-   
+   font-size: 1.5vw;
 `;

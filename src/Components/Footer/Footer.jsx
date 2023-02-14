@@ -1,5 +1,5 @@
 import React from 'react'
-import { FooterWrap, LogoSection, LinkSection, SocialIcon, ContactCard, PagewLink, PagewLinkProduct, MobileView } from './FooterElement'
+import { FooterWrap, LogoSection, LinkSection, SocialIcon, WritesDesk, ContactCard, PagewLink, PagewLinkProduct, MobileView } from './FooterElement'
 import logo from '../../assets/logoElement.png';
 import { BsFacebook, BsLinkedin } from 'react-icons/bs'
 import { AiFillInstagram, AiFillTwitterCircle, AiFillYoutube } from 'react-icons/ai'
@@ -22,24 +22,24 @@ const Footer = () => {
                         <PagewLink to='/getInTouch' >Get In Touch</PagewLink>
                     </LinkSection>
                     <SocialIcon>
-                        <a href=""><BsFacebook style={{ color: '#3C5A9A' }} /></a>
-                        <a href=""><AiFillInstagram style={{ color: '#A2359D' }} /></a>
-                        <a href=""><BsLinkedin style={{ color: ' #2878B7' }} /></a>
-                        <a href=""><AiFillTwitterCircle style={{ color: '#1DA1F2' }} /></a>
-                        <a href=""><AiFillYoutube style={{ color: '#FF0000' }} /></a>
+                        <a href="https://www.facebook.com/miracle.stonex.official" target="_blank"><BsFacebook style={{ color: '#3C5A9A' }} /></a>
+                        <a href="https://www.instagram.com/miracle_stonex_official/" target="_blank"><AiFillInstagram style={{ color: '#A2359D' }} /></a>
+                        <a href="https://twitter.com/Miracle_StoneX" target="_blank"><AiFillTwitterCircle style={{ color: '#1DA1F2' }} /></a>
                     </SocialIcon>
                     <ContactCard>
                         <h2 >Contact</h2>
-                        <p>PLOT NO 33, APIIC BULIDING PRODUCTS SEZ
-                            ANANGI VILLAGE MADDIPADU MANDAL, Andhra Pradesh 523211
-                            PHONE NUMBER: +91 91771 95555,+91 9573148794
-                            EMAIL ID: info@anaghastones.com</p>
+                        <p>SY.NO. 702/2 & 711/2B, Thirumala Kota Road, 
+                            Near Kamandoddi, Konerpalli Post, 
+                            Pillaikothur Village, Krishnagiri District - 6351177<br />
+                            Tamil Nadu, India<br />
+                            Mobile No: +91 99866 62488
+                        </p>
                     </ContactCard>
 
-                    <h6 style={{ textAlign: 'center', marginTop: '10px' }}>
-                        Miracle Stonex © 2023 All Right Reserved.
-                    </h6>
                 </FooterWrap>
+                    <WritesDesk style={{ textAlign: 'center', marginTop: '10px' }}>
+                        Miracle Stonex © 2023 All Right Reserved.
+                    </WritesDesk>
             </div>
             <MobileView>
                 <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
@@ -47,11 +47,9 @@ const Footer = () => {
                         <img src={logo} alt="Logo" />
                     </LogoSection>
                     <SocialIcon>
-                        <a href=""><BsFacebook style={{ color: '#3C5A9A' }} /></a>
-                        <a href=""><AiFillInstagram style={{ color: '#A2359D' }} /></a>
-                        <a href=""><BsLinkedin style={{ color: ' #2878B7' }} /></a>
-                        <a href=""><AiFillTwitterCircle style={{ color: '#1DA1F2' }} /></a>
-                        <a href=""><AiFillYoutube style={{ color: '#FF0000' }} /></a>
+                        <a href="https://www.facebook.com/miracle.stonex.official" target="_blank"><BsFacebook style={{ color: '#3C5A9A' }} /></a>
+                        <a href="https://www.instagram.com/miracle_stonex_official/" target="_blank"><AiFillInstagram style={{ color: '#A2359D' }} /></a>
+                        <a href="https://twitter.com/Miracle_StoneX" target="_blank"><AiFillTwitterCircle style={{ color: '#1DA1F2' }} /></a>
                     </SocialIcon>
                 </div>
                 <LinkSection>

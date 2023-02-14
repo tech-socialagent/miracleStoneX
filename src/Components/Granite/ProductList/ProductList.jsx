@@ -19,15 +19,17 @@ const ProductList = ({ page }) => {
   if (pathname == '/granite') {
     data = graniteData
     currentPage = 'granite'
+    console.log(currentPage);
   }
   else {
     data = marbleData;
     currentPage = 'marble'
+    console.log(currentPage);
   }
 
   return (
     <SectionWrap>
-      <Filter currentPage={currentPage} >
+      <Filter>
         <FilterMobile filterActive={filterActive} onClick={() => setFilterActive(!filterActive)} ><FiFilter />Filter</FilterMobile>
         <FilterDesktop ><FiFilter />Filter</FilterDesktop>
         <Color filterActive={filterActive}>
