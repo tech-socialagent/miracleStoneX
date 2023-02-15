@@ -1,31 +1,36 @@
 import React, { useState } from 'react'
 import logo from '../../assets/logoElement.png'
-import { Wrap, Left, Right, FormWrap, TopSection, } from './GetInTouchElement'
+import { Wrap, Left, Right, FormWrap, TopSection, Btn } from './GetInTouchElement'
 
 const GetInTouch = () => {
 
   const [name, setName] = useState('')
   const [phone, setPhone] = useState('')
   const [email, setEmail] = useState('')
+  const [location, setLocation] = useState('')
+  const [Message, setMessage] = useState('')
+  const [sending, setSending] = useState(false)
 
 
   const submitHandle = (e) => {
-
     e.preventDefault();
+    setSending(true)
     const config = {
       SecureToken: "21ccf322-970a-4da2-a907-ef9ef75ba2b5",
       To: 'miraclestonex001@gmail.com',
       From: "info@miraclestonex.co.in",
-      Subject: "This is the subject TEST",
-      Body: `Name: ${name} \n Email: ${email} \n Phone: +91${phone}`,
+      Subject: "Website Lead",
+      Body: `Name: ${name} \n Email: ${email} \n Phone: +91${phone} Location: ${location} Message: ${Message}`,
     }
-    if (window.Email) {
+    if (window.Email && sending == false) {
       window.Email.send(config).then((err) => {
-        alert('data collected', err)
-        // setSending(false)
+        alert('we will get back to you shortly')
+        setSending(false)
         setName('')
         setEmail('')
         setPhone('')
+        setLocation('')
+        setMessage('')
       });
     }
 
@@ -51,7 +56,10 @@ const GetInTouch = () => {
             value={name}
             onChange={(e) => setName(e.target.value)}
             placeholder='My Name' />
-          <input type='text' placeholder='Location' />
+          <input
+            value={location}
+            onChange={(e) => setLocation(e.target.value)}
+            type='text' placeholder='Location' />
           <input required
             value={phone}
             onChange={(e) => setPhone(e.target.value)}
@@ -60,8 +68,13 @@ const GetInTouch = () => {
             value={email}
             onChange={(e) => setEmail(e.target.value)}
             type='email' placeholder='Email id' />
-          <textarea type='text' placeholder='message' />
-          <input type='submit' style={{ width: '30%', border: 'none', background: '#FF9634', borderRadius: '5px', color: '#fff' }} />
+          <textarea
+            value={Message}
+            onChange={(e) => setMessage(e.target.value)}
+            type='text' placeholder='message' />
+          <Btn sending={sending} >
+            <input type='submit' />
+          </Btn>
         </FormWrap>
       </Right>
       {/* zoho form */}

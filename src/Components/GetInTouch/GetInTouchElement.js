@@ -92,3 +92,16 @@ export const TopSection = styled.div`
     
 `;
 
+export const Btn = styled.div`
+
+    input[type=submit]{
+        width: 30%;
+        border: none;
+        background: #FF9634;
+        border-radius: 5px;
+        color: #fff;
+    }
+    input[type=submit]:hover{
+        cursor: ${({sending}) => (sending ? 'not-allowed' : 'pointer')};
+    }
+`;
