@@ -6,8 +6,9 @@ export const SectionWrap = styled.div`
     align-items: center;
     padding: 8%;
     padding-top: 3%;
-    padding-bottom: 5%;
-    border-bottom: solid 1px;
+    padding-bottom: 2%;
+    /* background: #FFFAFA; */
+    /* border-bottom: solid 1px; */
 
     @media screen and (max-width: 750px){
         display: flex;
@@ -39,7 +40,7 @@ export const Desc = styled.div`
     line-height: 24px;
     font-size: 18px;
     font-style: normal;
-    margin-top: 5%;
+    /* margin-top: 3%; */
 
     @media screen and (max-width: 750px){
        font-size: 15px;

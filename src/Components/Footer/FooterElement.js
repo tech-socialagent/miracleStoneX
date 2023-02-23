@@ -8,6 +8,8 @@ export const FooterWrap = styled.div`
     padding-left: 8%;
     padding-right: 8%;
     align-items: center;
+    padding-top: 5%;
+    padding-bottom: 2%;
     @media screen and (max-width: 750px){
         display: none;
     }

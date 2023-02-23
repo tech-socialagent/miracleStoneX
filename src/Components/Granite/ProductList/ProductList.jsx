@@ -1,4 +1,4 @@
-import React, { useState, useContext } from 'react'
+import React, { useState, useContext, useEffect } from 'react'
 import { SectionWrap, Filter, FilterMobile, FilterDesktop, ProductWrap, Color } from './ProductListElement'
 import ProductCard from '../../ProductCard/ProductCard'
 import { graniteData } from '../GraniteData'
@@ -14,6 +14,11 @@ const ProductList = ({ page }) => {
 
 
   const { pathname } = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [color]);
+
   let data = [];
   let currentPage = ''
   if (pathname == '/granite') {

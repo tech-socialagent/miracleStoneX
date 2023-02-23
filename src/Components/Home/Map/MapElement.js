@@ -4,7 +4,7 @@ export const MapWrap = styled.div`
     padding: 8%;
     padding-top: 3%;
     padding-bottom: 5%;
-    border-bottom: solid 1px;
+    /* border-bottom: solid 1px; */
     @media screen and (max-width: 750px){
       padding: 3%;
     }

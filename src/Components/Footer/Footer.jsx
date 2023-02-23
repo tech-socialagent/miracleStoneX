@@ -37,7 +37,7 @@ const Footer = () => {
                     </ContactCard>
 
                 </FooterWrap>
-                <WritesDesk style={{ textAlign: 'center', marginTop: '10px' }}>
+                <WritesDesk style={{ textAlign: 'center', marginTop: '10px', marginBottom: '3%' }}>
                     Miracle Stonex © 2023 All Right Reserved.
                 </WritesDesk>
             </div>

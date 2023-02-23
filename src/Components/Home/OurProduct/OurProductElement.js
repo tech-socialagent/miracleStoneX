@@ -3,9 +3,9 @@ import styled from "styled-components";
 
 export const OurProductWrap = styled.div`
     padding: 8%;
-    padding-top: 5%;
-    padding-bottom: 5%;
-    border-bottom: solid 1px;
+    padding-top: 0%;
+    padding-bottom: 3%;
+    /* border-bottom: solid 1px; */
 
     @media screen and (max-width: 650px){
         padding-top: 10%;
