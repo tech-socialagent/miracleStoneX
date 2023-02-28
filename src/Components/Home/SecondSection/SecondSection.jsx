@@ -7,7 +7,7 @@ const SecondSection = () => {
     return (
         <SectionWrap>
             <Left>
-                <Title>Miracle Stonex Special</Title>
+                <Title>Miracle Stonex</Title>
                 <Desc>Miracle Stonex is a combination of quality products, expert services, and personalised attention makes it a standout in the industry.<br /><br />
                     We use State-Of-The-Art technology and equipment to extract and process the granite stones, ensuring that each piece is of the highest quality and durability.<br /><br />
                     We've got a team of experienced and skilled workers who are dedicated to providing excellent customer service and ensuring that each project is completed to the customer's satisfaction.<br /><br />

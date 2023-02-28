@@ -8,8 +8,8 @@ const Banner = () => {
                 <source src="https://miraclestonex.s3.ap-south-1.amazonaws.com/video.mp4" type="video/mp4" />
             </Video>
             <Content>
-                {/* <Title>WELCOME TO MIRACLE STONEX</Title>
-                <Desc>India's  largest granite exports firm.</Desc> */}
+                <Title>WELCOME TO MIRACLE STONEX</Title>
+                <Desc>India's  largest granite exports firm.</Desc>
             </Content>
         </BannerWrap>
     )

@@ -4,7 +4,6 @@ import styled from "styled-components"
 
 export const SlideWrap = styled.div`
     position: fixed;
-    top: 0;
     right: ${({ isOpen }) => (isOpen ? '0' : '-100%')};
     height: 100vh;
     width: 100%;
